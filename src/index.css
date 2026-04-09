@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.instagram-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  padding: 40px 30px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo h1 {
+  font-size: 50px;
+  font-weight: normal;
+  color: #262626;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 12px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a8a8a8;
+}
+
+.login-btn {
+  background: #0095f6;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.login-btn:hover {
+  background: #1877f2;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.divider {
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.divider::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.divider span {
+  background: white;
+  padding: 0 18px;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.facebook-btn {
+  width: 100%;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  color: #385185;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.forgot-link {
+  text-align: center;
+}
+
+.forgot-link a {
+  color: #00376b;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.signup-card {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  padding: 25px;
+  text-align: center;
+}
+
+.signup-card p {
+  font-size: 14px;
+}
+
+.signup-card a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.app-download {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.app-download p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.store-btn {
+  background: #262626;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.success-message {
+  margin-top: 15px;
+  padding: 10px;
+  background: #e8f5e9;
+  color: #2e7d32;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.error-message {
+  margin-top: 15px;
+  padding: 10px;
+  background: #ffebee;
+  color: #c62828;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 12px;
+}
